@@ -6,8 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link href="form.css" rel="stylesheet"> 
+    <script src="form.js" defer></script>
 </head>
 <body>
-    
+    <h1><u>Client Consultation Form</u></h1>
+    <h2>Personal Information</h2>
+
+     <form id="payment" method="POST" action="http://www.example.com/sb/payment">
+        <fieldset id="clientInfo">
+           <legend>Billing Information (Required)</legend>
+
+           <label for="firstBox">First Name*</label>
+        <input id="firstBox" placeholder="First" name="fName" required type="text">
+
+        <label for="street2">Street</label>
+        <input name="streetBox2" id="street2" type="text"/>
+
+        <label for="stateBox">State</label>
+        <input name="state" id="stateBox" type="text" />
+        
+        <label for="cityBox">City</label>
+        <input name="city" id="cityBox" type="text" maxlength="2s" pattern="^\d{5}(-\d{4})?$" required/>
+
+        <label for="zipBox">Postal code</label>
+        <input name="zip" id="zipBox" type="text" placeholder="#### (-###" pattern="^\d {5} $ (-\d {4})$ " required/>
+
+        <label for="countryBox">Country</label>
+        <input name="country" id="countryBox" type="text" value="United States" required/>
+  
+        <label for="phoneBox">Phone Number</label>
+        <input name="phone" id="phoneBox" placeholder="(###)-###-####" type="tel" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+        </fieldset>
+    </form>
 </body>
 </html>
