@@ -5,38 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link href="form.css" rel="stylesheet"> 
-    <script src="form.js" defer></script>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1><u>Client Consultation Form</u></h1>
-    <h2>Personal Information</h2>
-
-     <form id="payment" method="POST" action="http://www.example.com/sb/payment">
-        <fieldset id="clientInfo">
-           <legend>Billing Information (Required)</legend>
-
-           <label for="firstBox">First Name*</label>
-        <input id="firstBox" placeholder="First" name="fName" required type="text">
-
-        <label for="street2">Street</label>
-        <input name="streetBox2" id="street2" type="text"/>
-
-        <label for="stateBox">State</label>
-        <input name="state" id="stateBox" type="text" />
-        
-        <label for="cityBox">City</label>
-        <input name="city" id="cityBox" type="text" maxlength="2s" pattern="^\d{5}(-\d{4})?$" required/>
-
-        <label for="zipBox">Postal code</label>
-        <input name="zip" id="zipBox" type="text" placeholder="#### (-###" pattern="^\d {5} $ (-\d {4})$ " required/>
-
-        <label for="countryBox">Country</label>
-        <input name="country" id="countryBox" type="text" value="United States" required/>
-  
-        <label for="phoneBox">Phone Number</label>
-        <input name="phone" id="phoneBox" placeholder="(###)-###-####" type="tel" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
-        </fieldset>
-    </form>
+        <div class="jumbotron jumbotron-fluid text-sm-center bg-warning">
+                <div class="container">
+                  <h1 class="display-4">West-Mec Form</h1>
+                  <p class="lead">Fill out the form for the client below:</p>
+                </div>
+              </div>
+              <form>
+                    <div class="form-row " style="width: 50%;">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Stylist Name">
+                      </div>
+                  </form>
+    <form class="needs-validation fixed-bottom " novalidate>
+        <div class="form-row border">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04">State</label>
+            <select class="custom-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Arizona</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+           Did you fill out the form?
+            </label>
+            <div class="invalid-feedback">
+              Do not forget to fill in any boxes
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
