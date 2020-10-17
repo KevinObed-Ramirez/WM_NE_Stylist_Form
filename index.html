@@ -12,27 +12,27 @@
 <body>
         <div class="jumbotron jumbotron-fluid text-sm-center bg-warning">
                 <div class="container">
-                  <h1 class="display-4">West-Mec Form</h1>
+                  <h1 class="display-4">West-Mec Client Form</h1>
                   <p class="lead">Fill out the form for the client below:</p>
                 </div>
               </div>
-              <form>
-                    <div class="form-row " style="width: 50%;">
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Stylist Name">
-                      </div>
-                  </form>
-    <form class="needs-validation fixed-bottom " novalidate>
+              <div class="input-group" style="padding-left: 500px; padding-right: 20px; padding-bottom: 100px;">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="HName_box">Hairstylist Name</span>
+                </div>
+                <input type="text" class="form-control" style="margin-right: 500px;">
+              </div>
+    <form class="needs-validation " novalidate style="margin-left: 20px; margin-right: 20px;">
         <div class="form-row border">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom01">First name</label>
+            <label for="validationCustom01">Client First name</label>
             <input type="text" class="form-control" id="validationCustom01" value="" required>
             <div class="valid-feedback">
               Looks good!
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="validationCustom02">Last name</label>
+            <label for="validationCustom02"> Client Last name</label>
             <input type="text" class="form-control" id="validationCustom02" value="" required>
             <div class="valid-feedback">
               Looks good!
@@ -47,10 +47,61 @@
               Please provide a valid city.
             </div>
           </div>
+         
           <div class="col-md-3 mb-3">
             <label for="validationCustom04">State</label>
             <select class="custom-select" id="validationCustom04" required>
               <option selected disabled value="">Choose...</option>
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
+              <option>Arizona</option>
               <option>Arizona</option>
             </select>
             <div class="invalid-feedback">
@@ -64,13 +115,21 @@
               Please provide a valid zip.
             </div>
           </div>
+          <div class="col-md-3 mb-3">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Format: (###)-###-####">
+            </div>
+          </div>
         </div>
         <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-           Did you fill out the form?
-            </label>
             <div class="invalid-feedback">
               Do not forget to fill in any boxes
             </div>
