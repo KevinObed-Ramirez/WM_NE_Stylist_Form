@@ -7,11 +7,11 @@
     <title>Home</title>
   <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+<link rel="stylesheet" href="form.css">
 </head>
 <body>
         <div class="jumbotron jumbotron-fluid text-sm-center bg-warning">
-                <div class="container">
+                <div class="container" id="bigThing">
                   <h1 class="display-4">West-Mec Client Form</h1>
                   <p class="lead">Fill out the form for the client below:</p>
                 </div>
@@ -123,8 +123,8 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Format: (###)-###-####">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone"  name="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="Format: (###)-###-####">
             </div>
           </div>
         </div>
