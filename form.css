@@ -7,3 +7,11 @@
     animation-name: example;
     animation-duration: 5s;
 }
+
+.hairText{
+  height: 200px;
+}
+
+.checks{
+  display: inline-block;
+}

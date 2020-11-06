@@ -149,41 +149,42 @@
       
       
       <section>
-        <h6>STYLIST USE ONLY  HAIR CONSULTATION (check all that apply)</h6>
+        <h6><u><b>STYLIST USE ONLY  HAIR CONSULTATION (select all that apply)</b></u></h6>
 <!------------------------------------------------ hair condition ------------------------------------------------>
         <div class="card">
           <div class="card-body">
             Hair Condition:
           </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Dry</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">Greasy</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
-            <label class="form-check-label" for="inlineCheckbox3">Normal</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
-            <label class="form-check-label" for="inlineCheckbox4">Chemical Damage</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
-            <label class="form-check-label" for="inlineCheckbox5">Environmantal Damage</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option6">
-            <label class="form-check-label" for="inlineCheckbox6">Heat Damage</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option7">
-            <label class="form-check-label" for="inlineCheckbox7">Product build-up</label>
-          </div>
+          <ul class="checkList" id="conditions">
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Dry</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Greasy</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Normal</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
+                <label class="form-check-label" for="inlineCheckbox4">Chemical Damage</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
+                <label class="form-check-label" for="inlineCheckbox5">Environmantal Damage</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option6">
+                <label class="form-check-label" for="inlineCheckbox6">Heat Damage</label>
+              </div>
+              <div class="form-check form-check-inline checks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option7">
+                <label class="form-check-label" for="inlineCheckbox7">Product build-up</label>
+              </div>
+          </ul checks>
         </div>
 
 <!------------------------------------------------ hair classification ------------------------------------------------>
@@ -191,23 +192,25 @@
           <div class="card-body">
             Hair Classification:
           </div>
+          <ul class="checkList" id="classification">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Straight</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Wavy</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Curly</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Very Curly</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Straight</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Wavy</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Curly</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Very Curly</label>
-          </div>
+          </ul>
         </div>
 
 <!------------------------------------------------ scalp condition ------------------------------------------------>
@@ -215,20 +218,21 @@
           <div class="card-body">
             Scalp Condition:
           </div>
+          <ul class="checkList" id="scalp">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Dry Oily</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Dandruff Normal</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Product build-up</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Dry Oily</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Dandruff Normal</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Product build-up</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ hair texture ------------------------------------------------>
@@ -236,24 +240,25 @@
           <div class="card-body">
             Hair Texture:
           </div>
+          <ul class="checkList" id="texture">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Very Fine</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Fine</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Medium</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Coarse</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Very Fine</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Fine</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Medium</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Coarse</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ growth patterns ------------------------------------------------>
@@ -261,24 +266,25 @@
           <div class="card-body">
             Growth Patterns:
           </div>
+          <ul class="checkList" id="growth">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Nape Whorls</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Widows Peak</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Cowlick</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Double Crown</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Nape Whorls</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Widows Peak</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Cowlick</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Double Crown</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ hair density ------------------------------------------------>
@@ -286,28 +292,29 @@
           <div class="card-body">
             Hair Density:
           </div>
+          <ul class="checkList" id="density">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Very High</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">High</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Medium</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Low</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Mix</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Very High</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">High</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Medium</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Low</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Mix</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ hair porosity ------------------------------------------------>
@@ -315,20 +322,21 @@
           <div class="card-body">
             Hair Porosity:
           </div>
+          <ul class="checkList" id="porosity">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Low</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Average</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">High</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Low</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Average</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">High</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ hair elasticity ------------------------------------------------>
@@ -336,24 +344,25 @@
           <div class="card-body">
             Hair Elastisity:
           </div>
+          <ul class="checkList" id="elasticity">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Good</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Average</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Poor</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Mix</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Good</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Average</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Poor</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Mix</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ hair length ------------------------------------------------>
@@ -361,20 +370,21 @@
           <div class="card-body">
             Hair Length:
           </div>
+          <ul class="checkList" id="length">
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Short</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Medium</label>
+            </div>
+            <div class="form-check form-check-inline checks">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Long</label>
+            </div>
 
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Short</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Medium</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">Long</label>
-          </div>
-          
+          </ul>
         </div>
 
 <!------------------------------------------------ alergic reactions ------------------------------------------------>
@@ -384,25 +394,23 @@
           </div>
         <!-- text box -->
         <form>
-          <input type="text" id="AR" class="hair-text" name="AR">
+          <input type="text" id="AR" class="hairText" name="AR">
         </form>
         </div>
 
 <!------------------------------------------------ medical conditions ------------------------------------------------>
           <div class="card">
             <div class="card-body">
-              Medical Condition
+              Medical Condition:
             </div>
           <!-- text box -->
           <form>
-            <input type="text" id="MC" class="hair-text" name="MC">
+            <input type="text" id="MC" class="hairText" name="MC">
           </form>
 
           </div>
-
-
-      </section>
       
+        </section>
 
       <button class="btn btn-primary" type="submit" style="margin-left:550px">Submit form</button>
     </form>
